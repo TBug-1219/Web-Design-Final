@@ -1,0 +1,146 @@
+/* Victoria Buckner */
+@charset "utf-8";
+
+/* Set the header with the text aligned to the center
+and make the text color white */
+header{
+	text-align: center;
+	color: white;
+	}
+
+/* Set the navigation bar with the background color
+#404040, the overflow to hidden to hide it, the display to flex,
+set the padding to 0 and center the content with justify content */
+.navbar{
+	background-color: #404040;
+	overflow: hidden;
+	display: flex;
+	padding: 0;
+	justify-content: center;
+	}
+	
+/* Set the text in the nav bar to white, with no decoration,
+add a padding of 14px and 20px, display it in block form,
+specify the font family to Arial, sans serif */
+.navbar a{
+	color: white;
+	text-decoration: none;
+	padding: 14px 20px;
+	display: block;
+	font-family: Arial, sans-serif;
+	}
+	
+/* For when the cursor is hovering the nav bar choices,
+set the background color to #e7bcf0, and the color of the 
+text to white */
+.navbar a:hover{
+	background-color: #e8bcf0;
+	color: white;
+	}
+	
+/* For when the page from the nav bar is active, set the background
+color to #ca5cdd and the color of the text to white */
+.navbar a.active{
+	background-color: #ca5cdd;
+	color: white;
+	}
+	
+/* Set the max width of the nav bar to 600px unless there is a
+different format that needs less than that. Flex the navbar into 
+a column if the screen is not big enough for the row */
+@media screen and (max-width: 600px){
+	.navbar{
+		flex-direction: column;
+		}
+	}
+	
+/* For the photo container display it in flex form, make a gap 
+between each item 10px, and add a 20px margin to the top */
+.photo-container{
+	display: flex;
+	gap: 10px;
+	margin-top: 20px;
+	}
+	
+/* For the photo class set the width to 40% with a max width of
+200px and a height of 200px. Set the object fit to cover to take 
+up the space given and the border radius to 5px to round the 
+edges of the photos slightly */
+.photo{
+	width: 40%;
+	max-width:200px;
+	height: 200px;
+	object-fit: cover;
+	border-radius: 5px;
+	}
+	
+/* For the about-container class display it in flex form, add a 
+gap of 20px and a 20px margin to the top */
+.about-container{
+	display: flex;
+	gap: 20px;
+	margin: 20px;
+	}
+	
+/* For the column class set the flex to 1 for each to take the
+same spacing with a padding of 10px. Add a border that is 4px
+wide, solid and has the color code #e8bcf0. Add a shadow to that
+border that is 4px by 4px by 5px with the color code #2C2C2C. 
+Align the text to the center of the area. */
+.column{
+	flex: 1;
+	padding: 10px;
+	border: 4px solid #e8bcf0;
+	box-shadow: 4px 4px 5px #2C2C2C;
+	text-align: center;
+	}
+	
+/* Set the margin of the h4 tag to 0 on top */
+h4{
+	margin-top: 0;
+	}
+	
+/* Set the margin to 0 for the p and ul tags */
+p, ul{
+	margin: 0;
+	}
+	
+/* For the ul tag take the dots away by setting the 
+list-style-type to none. Set the padding on the left to 0 */
+ul{
+	list-style-type: none;
+	padding-left: 0;
+	}
+	
+/* For the li tag set the bottom margin to 5px and the 
+font size to 15pt */
+li{
+	margin-bottom: 5px;
+	font-size: 15pt;
+	}
+	
+/* Set the background color for the entire code to 
+#707070, set the text color to white, and the font
+family to Arial, sans-serif */
+html{
+	background-color: #707070;
+	color: white;
+	font-family: Arial, sans-serif;
+
+	}
+	
+/* For the footer align the text to center, set the
+top and bottom padding to 20px  */
+footer{
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	}
+	
+/* For the paragraph tag align the text with the center
+and set the font size to 15pt */
+p{
+	text-align: center;
+	font-size: 15pt;
+}
+

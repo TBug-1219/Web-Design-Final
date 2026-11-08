@@ -1,0 +1,133 @@
+/* Victoria Buckner */
+@charset "utf-8";
+
+/* Set the navigation bar with the background color
+#404040, the overflow to hidden to hide it, the display to flex,
+set the padding to 0 and center the content with justify content */
+.navbar{
+	background-color: #404040;
+	overflow: hidden;
+	display: flex;
+	padding: 0;
+	justify-content: center;
+}
+	
+/* Set the text in the nav bar to white, with no decoration,
+add a padding of 14px and 20px, display it in block form,
+specify the font family to Arial, sans serif */
+.navbar a{
+	color: white;
+	text-decoration: none;
+	padding: 14px 20px;
+	display: block;
+	font-family: Arial, sans-serif;
+}
+	
+/* For when the cursor is hovering the nav bar choices,
+set the background color to #e7bcf0, and the color of the 
+text to white */
+.navbar a:hover{
+	background-color: #e8bcf0;
+	color: white;
+}
+	
+/* For when the page from the nav bar is active, set the background
+color to #ca5cdd and the color of the text to white */
+.navbar a.active{
+	background-color: #ca5cdd;
+	color: white;
+}
+	
+/* Set the max width of the nav bar to 600px unless there is a
+different format that needs less than that. Flex the navbar into 
+a column if the screen is not big enough for the row */
+@media screen and (max-width: 600px){
+	.navbar{
+		flex-direction: column;
+		}
+}
+	
+/* Set the background color for the entire code to 
+#707070, set the text color to white, and the font
+family to Arial, sans-serif */
+html{
+	background-color: #707070;
+	color: white;
+	font-family: Arial, sans-serif;
+}
+
+/* For the photo-row-one class display the content in 
+flex form, justify the content with space between. Add
+a 10px gap around the content, set the flex wrap to wrap
+and add a 20px margin. */
+.photo-row-one{
+	display: flex;
+	justify-content: space-between;
+	gap: 10px;
+	flex-wrap: wrap;
+	margin: 20px;
+}
+
+/* For the photo-item class align the text with the center,
+set the flex to 1 and the max width to the calculaton of 
+20% minus 10px to account for the gap */
+.photo-item{
+	text-align: center;
+	flex: 1;
+	max-width: calc(20%-10px);
+}
+
+/* For the photo class set the width to 100%, the height to auto,
+set the border radius to 5px to round the corners of the photos,
+and add a border that is 2px wide, solid, and has the color code
+#e8bcf0*/
+.photo{
+	width: 100%;
+	height: auto;
+	border-radius: 5px;
+	border: 2px solid #e8bcf8;
+}
+
+/* For the h2 tag align the text to the center and set the color
+of the words to white */
+h2{
+	text-align: center;
+	color: white;
+}
+
+/* For the paragraph tag align the text to the center and set the
+font size to 15pt */
+p{
+	text-align: center;
+	font-size: 15pt;
+}
+
+/* For the hr tag set the border to none, the height to 5px to
+set the thickness of the line, set the background color to 
+#38bcf0, set the margin to 20px 0, and the border radius to 3px
+to round out the edges line*/
+hr{
+	border: none;
+	height: 5px;
+	background-color: #e8bcf0;
+	margin: 20px 0;
+	border-radius: 3px;
+}
+
+/* For the champ class align the text with the center
+and add 20px to the top margin */
+.champ{
+	text-align: center;
+	margin-top: 20px;
+}
+
+/* For the champphoto class set the maz width to 60%, the 
+height to auto, add a border radius to round the corners
+of the photo slightly, and add a border that is 4px in 
+width, solid, and has the color code #38bcf0 */
+.champphoto{
+	max-width: 60%;
+	height: auto;
+	border-radius: 5px;
+	border: 4px solid #e8bcf8;
+}
